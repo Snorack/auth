@@ -197,6 +197,7 @@ export class WorkloadIdentityClient implements AuthClient {
       service_account_impersonation_url: `https://iamcredentials.googleapis.com/v1/projects/-/serviceAccounts/${
         this.#serviceAccount
       }:generateAccessToken`,
+      project_id: this.#projectID,
       credential_source: {
         url: requestURL,
         headers: {
